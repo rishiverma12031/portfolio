@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -14,4 +15,184 @@ a {
 ul {
     list-style: none;
     padding: 0;
+}
+
+/* Layout */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
+
+.ruler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ruler__label {
+    transform: rotate(270deg);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    min-height: 5rem;
+    background-color: grey;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title {
+    color: black;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.hero__kicker {
+    color: grey;
+}
+
+.hero__heading {
+
+}
+
+.hero__desc {
+
+}
+
+.hero__tags {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero__tag {
+    padding: 0.25rem 0.5rem;
+    background-color: grey;
+}
+
+.work__content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.work__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    color: grey;
+}
+
+.work__heading {
+    color: black;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__content {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.about__desc {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+
+.about__details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+
+.about__heading {
+
+}
+
+.about__detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.contact__links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* Components */
+
+.nav {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav__link {
+    color: black;
+}
+
+.project-card {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.project-card__num {
+    color: grey;
+}
+
+.project-card__title {
+
+}
+
+.project-card__stack {
+    color: grey;
+}
+
+.project-card__desc {
+
+}
+
+.project-card__link--live {
+    border: 2px solid grey;
+}
+
+.project-card__link--github {
+    color: grey;
 }

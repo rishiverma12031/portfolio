@@ -7,144 +7,152 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <section>
-            <p>Portfolio</p>
+    <header class="grid-container header">
+        <section class="ruler">
+            <p class="ruler__label">Portfolio</p>
         </section>
-        <section>
-            <p>Rishi Verma</p>
+        <section class="header__content">
+            <p class="header__title">Rishi Verma</p>
             <nav>
-                <ul>
-                    <li>Work</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                <ul class="nav">
+                    <li>
+                        <a class="nav__link" href="">Work</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="">About</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </section>
     </header>
     <main>
-        <section class="hero">
-            <section></section>
-            <section>
-                <p>Junior Frontend Developer · Open to work</p>
-                <h1>BUILD.</h1>
-                <h1>SHIP.</h1>
-                <h1>LEARN.</h1>
-                <p>Self-taught developer from a humanities background. BA in English and Spanish, DELE B2. I build clean, structured interfaces and care about code the same way I care about language — clarity first, always. Currently seeking my first junior role in Gurugram or remote.</p>
-                <span>JavaScript (ES6+)</span>
-                <span>Node.js</span>
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>Web hosting</span>
+        <section id="hero" class="grid-container">
+            <section class="ruler"></section>
+            <section class="hero__content">
+                <p class="hero__kicker">Junior Frontend Developer · Open to work</p>
+                <h1 class="hero__heading">BUILD.</h1>
+                <h1 class="hero__heading">SHIP.</h1>
+                <h1 class="hero__heading">LEARN.</h1>
+                <p class="hero__desc">Self-taught developer from a humanities background. BA in English and Spanish, DELE B2. I build clean, structured interfaces and care about code the same way I care about language — clarity first, always. Currently seeking my first junior role in Gurugram or remote.</p>
+                <section class="hero__tags">
+                    <span class="hero__tag">JavaScript (ES6+)</span>
+                    <span class="hero__tag">Node.js</span>
+                    <span class="hero__tag">HTML5</span>
+                    <span class="hero__tag">CSS3</span>
+                    <span class="hero__tag">Web hosting</span>
+                </section>
             </section>
         </section>
-        <section class="work">
-            <section>
-                <p>Projects</p>
+        <section id="work" class="grid-container">
+            <section class="ruler">
+                <p class="ruler__label">Projects</p>
             </section>
-            <section>
-                <section>
-                    <h2>Noteworthy Creations</h2>
+            <section class="work__content">
+                <section class="work__header">
+                    <h2 class="work__heading">Noteworthy Creations</h2>
                     <span>07 total</span>
                 </section>
-                <section>
+                <section class="project-container">
                     <article class="project-card">
-                        <p class="project-card__number">07</p>
+                        <p class="project-card__num">07</p>
                         <h3 class="project-card__title">Blog Layout Prototype</h3>
                         <p class="project-card__stack">HTML · CSS · BEM · GitHub Pages</p>
-                        <p class="project-card__description">Multi-page blog with semantic HTML5, CSS Grid and Flexbox, sticky navigation, BEM naming convention throughout, and accessibility focus states. Live on GitHub Pages.</p>
-                        <a class="project-card__live-link" href="">View live</a>
-                        <a class="project-card__github-link" href="">View Source on GitHub</a>
+                        <p class="project-card__desc">Multi-page blog with semantic HTML5, CSS Grid and Flexbox, sticky navigation, BEM naming convention throughout, and accessibility focus states. Live on GitHub Pages.</p>
+                        <a class="project-card__link--live" href="">View live</a>
+                        <a class="project-card__link--github" href="">View Source on GitHub</a>
                     </article>
                     <article class="project-card">
-                        <p class="project-card__number">06</p>
+                        <p class="project-card__num">06</p>
                         <h3 class="project-card__title">Landing Page Clone</h3>
                         <p class="project-card__stack">HTML · CSS · GitHub Pages</p>
-                        <p class="project-card__description">Precision recreation of a production landing page. Focus on visual hierarchy, spacing accuracy, and clean semantic markup. Live on GitHub Pages.</p>
-                        <a class="project-card__live-link" href="">View live</a>
-                        <a class="project-card__github-link" href="">View Source on GitHub</a>
+                        <p class="project-card__desc">Precision recreation of a production landing page. Focus on visual hierarchy, spacing accuracy, and clean semantic markup. Live on GitHub Pages.</p>
+                        <a class="project-card__link--live" href="">View live</a>
+                        <a class="project-card__link--github" href="">View Source on GitHub</a>
                     </article>
                     <article class="project-card">
-                        <p class="project-card__number">05</p>
+                        <p class="project-card__num">05</p>
                         <h3 class="project-card__title">Marketing Report Generator</h3>
                         <p class="project-card__stack">Node.js · Data Processing</p>
-                        <p class="project-card__description">Analytics CLI with complex data validation, Set-based duplicate detection, ROI and CTR calculations, and multi-level campaign reporting.</p>
-                        <a class="project-card__github-link" href="">View Source on GitHub</a>
+                        <p class="project-card__desc">Analytics CLI with complex data validation, Set-based duplicate detection, ROI and CTR calculations, and multi-level campaign reporting.</p>
+                        <a class="project-card__link--github" href="">View Source on GitHub</a>
                     </article>
                     <article class="project-card">
-                        <p class="project-card__number">04</p>
+                        <p class="project-card__num">04</p>
                         <h3 class="project-card__title">Binary Converter</h3>
                         <p class="project-card__stack">Node.js · Recursion · ES Modules</p>
-                        <p class="project-card__description">Converts decimal numbers — including fractions — to binary using recursive algorithms for both integer and fractional parts. Input validation with a self-retrying loop.</p>
-                        <a class="project-card__github-link" href="">View Source on GitHub</a>
+                        <p class="project-card__desc">Converts decimal numbers — including fractions — to binary using recursive algorithms for both integer and fractional parts. Input validation with a self-retrying loop.</p>
+                        <a class="project-card__link--github" href="">View Source on GitHub</a>
                     </article>
                     <article class="project-card">
-                        <p class="project-card__number">03</p>
+                        <p class="project-card__num">03</p>
                         <h3 class="project-card__title">Rock Paper Scissors</h3>
                         <p class="project-card__stack">Node.js · Game Logic · ES Modules</p>
-                        <p class="project-card__description">Best-of-3-points game against the computer with stateful score tracking, a play-again loop, ternary chain win and loss logic, and chalk-powered feedback.</p>
-                        <a class="project-card__github-link" href="">View Source on GitHub</a>
+                        <p class="project-card__desc">Best-of-3-points game against the computer with stateful score tracking, a play-again loop, ternary chain win and loss logic, and chalk-powered feedback.</p>
+                        <a class="project-card__link--github" href="">View Source on GitHub</a>
                     </article>
                     <article class="project-card">
-                        <p class="project-card__number">02</p>
+                        <p class="project-card__num">02</p>
                         <h3 class="project-card__title">Statistics Calculator</h3>
                         <p class="project-card__stack">Node.js · Algorithms · ES Modules</p>
-                        <p class="project-card__description">Calculates mean, median, mode, range, variance, and standard deviation. Variance is built on top of calculateMean — function composition as a deliberate design pattern.</p>
-                        <a class="project-card__github-link" href="">View Source on GitHub</a>
+                        <p class="project-card__desc">Calculates mean, median, mode, range, variance, and standard deviation. Variance is built on top of calculateMean — function composition as a deliberate design pattern.</p>
+                        <a class="project-card__link--github" href="">View Source on GitHub</a>
                     </article>
                     <article class="project-card">
-                        <p class="project-card__number">01</p>
+                        <p class="project-card__num">01</p>
                         <h3 class="project-card__title">GOT Quiz</h3>
                         <p class="project-card__stack">Node.js · CLI · ES Modules</p>
-                        <p class="project-card__description">Interactive trivia CLI with difficulty tiers, weighted scoring, multiple accepted answers, chalk-powered terminal UX, and a leaderboard display.</p>
-                        <a class="project-card__github-link" href="">View Source on GitHub</a>
+                        <p class="project-card__desc">Interactive trivia CLI with difficulty tiers, weighted scoring, multiple accepted answers, chalk-powered terminal UX, and a leaderboard display.</p>
+                        <a class="project-card__link--github" href="">View Source on GitHub</a>
                     </article>
                     <article class="project-card">
-                        <p class="project-card__number">00</p>
+                        <p class="project-card__num">00</p>
                         <h3 class="project-card__title">More coming soon</h3>
-                        <p class="project-card__description">Vanilla JS projects in progress</p>
+                        <p class="project-card__desc">Vanilla JS projects in progress</p>
                     </article>
                 </section>
             </section>
         </section>
-        <section class="about">
-            <section>
-                <p>About</p>
+        <section id="about" class="grid-container">
+            <section class="ruler">
+                <p class="ruler__label">About</p>
             </section>
-            <section>
-                <section>
-                    <h2>Know Your Developer</h2>
+            <section class="about__content">
+                <section class="about__desc">
+                    <h2 class="about__heading">Know Your Developer</h2>
                     <p>I'm Rishi Verma, a self-taught frontend developer based in Gurugram, India. My background is in English and Spanish — BA from Delhi University and a DELE B2 from Instituto Cervantes, awarded February 2026.</p>
                     <p>I came to development through language. Both demand the same things: care for structure, clarity for the reader, and precision in every small decision. I'm currently building toward my first junior frontend role — learning in public and shipping real projects along the way.</p>
                 </section>
-                <section>
-                    <h2>Details</h2>
+                <section class="about__details">
+                    <h2 class="about__heading">Details</h2>
                     <ul>
-                        <li>
+                        <li class="about__detail">
                             <p>Location</p>
                             <p>New Delhi, India</p>
                         </li>
-                        <li>
+                        <li class="about__detail">
                             <p>Status</p>
                             <p>Open to work</p>
                         </li>
-                        <li>
+                        <li class="about__detail">
                             <p>Education</p>
                             <p>BA · Delhi University</p>
                         </li>
-                        <li>
+                        <li class="about__detail">
                             <p>Certification</p>
                             <p>SEO First Principles · Semrush</p>
                         </li>
-                        <li>
+                        <li class="about__detail">
                             <p>Languages</p>
                             <p>English(C2) · Spanish(B2)</p>
                         </li>
-                        <li>
+                        <li class="about__detail">
                             <p>GitHub</p>
                             <a href="">rishiverma12031</a>
                         </li>
-                        <li>
+                        <li class="about__detail">
                             <p>LinkedIn</p>
                             <a href="">Rishi Verma</a>
                         </li>
@@ -152,21 +160,23 @@
                 </section>
             </section>
         </section>
-        <section class="contact">
-            <section>
+        <section id="contact" class="grid-container">
+            <section class="ruler">
             </section>
-            <section>
+            <section class="contact__content">
                 <h2>How do you take your coffee?</h2>
-                <a href="">LinkedIn</a>
-                <a href="">GitHub</a>
-                <a href="">Email</a>
+                <section class="contact__links">
+                    <a href="">LinkedIn</a>
+                    <a href="">GitHub</a>
+                    <a href="">Email</a>
+                </section>
             </section>
         </section>
     </main>
-    <footer>
-        <section>
+    <footer class="grid-container">
+        <section class="ruler">
         </section>
-        <section>
+        <section class="footer__content">
             <p>Rishi Verma — Frontend Developer</p>
             <p>New Delhi, India · 2026</p>
         </section>
