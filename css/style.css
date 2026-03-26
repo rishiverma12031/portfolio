@@ -89,10 +89,7 @@ body {
     font-weight: 900;
     line-height: 0.88;
     letter-spacing: -0.04em;
-}
-
-.hero__heading > span {
-    display: block;
+    margin: 0;
 }
 
 .hero__desc {
@@ -385,4 +382,8 @@ body {
 
 .border--black {
     border: 2px solid var(--black);
+}
+
+.display--block {
+    display: block;
 }
