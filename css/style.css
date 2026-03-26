@@ -91,6 +91,10 @@ body {
     letter-spacing: -0.04em;
 }
 
+.hero__heading > span {
+    display: block;
+}
+
 .hero__desc {
     border-left: 3px solid var(--red);
     padding-left: 1rem;
