@@ -2,7 +2,7 @@
 
 Personal portfolio site built with vanilla HTML and CSS. Designed around the International Typographic Style (Swiss Grid), with a persistent left column rule system inspired by mid-century Swiss design posters.
 
-**Live site:** [rishiverma.netlify.app](#)
+🔗 **[Live Demo](https://rishiverma.netlify.app)**
 
 ---
 
